@@ -2,10 +2,18 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-GET     /                           controllers.MainController.index()
-GET     /message                    controllers.MessageController.getMessage()
-GET     /assets/javascripts/routes  controllers.MessageController.javascriptRoutes()
+GET    /                            controllers.MainController.index()
+GET    /message                     controllers.MessageController.getMessage()
+GET    /assets/javascripts/routes   controllers.MessageController.javascriptRoutes()
+
+GET    /class/hello                 controllers.ClassController.classHello()
+POST   /class/create                controllers.ClassController.create()
+GET    /class/all                   controllers.ClassController.all()
+
+POST   /student/create              controllers.StudentController.create()
+POST   /student/createOrUpdate      controllers.StudentController.createOrUpdate()
+GET    /student/findByClassName     controllers.StudentController.findByClassName(className)
 
 # Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.at(path="/public", file)
-GET     /webjars/*file              controllers.WebJarAssets.at(file)
+GET    /assets/*file                controllers.Assets.at(path="/public", file)
+GET    /webjars/*file               controllers.WebJarAssets.at(file)

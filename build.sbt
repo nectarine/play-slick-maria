@@ -22,8 +22,7 @@ libraryDependencies ++= Seq(
   "com.typesafe.slick" %% "slick" % "1.0.1",
   "com.typesafe.play" %% "play-slick" % "0.5.0.8",
   "mysql" % "mysql-connector-java" % "5.1.26",
-  "org.slf4j" % "slf4j-nop" % "1.6.4",
-  "com.wordnik" % "swagger-play2_2.10" % "1.2.6-SNAPSHOT"
+  "org.slf4j" % "slf4j-nop" % "1.6.4"
 )
 
 play.Project.playScalaSettings

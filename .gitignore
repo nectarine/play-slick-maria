@@ -17,3 +17,4 @@ dist
 /activator-sbt-atmos-akka-shim.sbt
 .target/
 bin/
+*.sql
