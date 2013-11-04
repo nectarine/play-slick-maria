@@ -35,7 +35,7 @@ object StudentController extends Controller {
       Ok(studentName + " created in " + classId)
   }
 
-  def createOrUpdate = Action {
+  def createWithForm = Action {
     implicit request =>
       creationForm.bindFromRequest.fold(
         formWithErrors => BadRequest(formWithErrors.toString),
@@ -63,7 +63,6 @@ object StudentController extends Controller {
             Ok(Json.toJson(queried.list))
           }
       }
-
   }
 
 }

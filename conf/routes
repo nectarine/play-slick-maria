@@ -11,7 +11,7 @@ POST   /class/create                controllers.ClassController.create()
 GET    /class/all                   controllers.ClassController.all()
 
 POST   /student/create              controllers.StudentController.create()
-POST   /student/createOrUpdate      controllers.StudentController.createOrUpdate()
+POST   /student/createWithForm      controllers.StudentController.createWithForm()
 GET    /student/findByClassName     controllers.StudentController.findByClassName(className)
 
 # Map static resources from the /public folder to the /assets URL path
